@@ -37,7 +37,7 @@ def load_saved_artifacts():
     global __locations
 
     with open(
-        "/Users/abhijeetthombare/ab_lib/Projects/BangloreHousePrices/server/artifacts/columns.json",
+        "/home/ubuntu/BHP/server/artifacts/columns.json",
         "r",
     ) as f:
         __data_columns = json.load(f)["data_columns"]
@@ -45,7 +45,7 @@ def load_saved_artifacts():
 
     global __model
     with open(
-        "/Users/abhijeetthombare/ab_lib/Projects/BangloreHousePrices/server/artifacts/banglore_home_prices_model.pickle",
+        "/home/ubuntu/BHP/server/artifacts/banglore_home_prices_model.pickle",
         "rb",
     ) as f:
         __model = pickle.load(f)
