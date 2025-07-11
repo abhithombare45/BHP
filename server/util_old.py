@@ -1,6 +1,5 @@
 import json
 import pickle
-import os
 
 __locations = None
 __data_columns = None
@@ -12,19 +11,13 @@ def load_saved_artifacts():
     global __locations
     global __model
 
-    base_dir = os.path.dirname(__file__)
-
-    # Relative path for columns.json
-    columns_path = os.path.join(base_dir, "artifacts", "columns.json")
-    with open(columns_path, "r") as f:
+    with open("/Users/abhijeetthombare/ab_lib/Projects/BangloreHousePrices/server/artifacts/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]
 
-    # Relative path for model pickle
-    model_path = os.path.join(base_dir, "artifacts", "banglore_home_prices_model.pickle")
-    with open(model_path, "rb") as f:
+    with open("/Users/abhijeetthombare/ab_lib/Projects/BangloreHousePrices/server/artifacts/banglore_home_prices_model.pickle", "rb") as f:
         __model = pickle.load(f)
-
+    
     print("Loading Artifacts is Done!\n")
 
 def get_location_names():
