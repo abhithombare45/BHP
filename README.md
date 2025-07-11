@@ -42,7 +42,7 @@ Users enter the details via a clean UI, and predictions are returned instantly v
 ---
 
 ## ⚙️ Project Structure
-
+```
 BHP/
 ├── server/                  # Backend
 │   ├── server.py            # Flask app 
@@ -52,19 +52,6 @@ BHP/
 │   ├── app.html             # Front-End main file
 │   ├── app.js
 │   └── app.css
-├── venv/                    # Python virtual environment
-
-BHP/
-├── client/                  # Frontend
-│   ├── app.html             # Front-End main file ✅
-│   ├── app.js
-│   └── app.css
-├── server/                  # Backend
-│   ├── server.py            # Flask app ✅
-│   ├── util.py              # Prediction logic
-│   └── artifacts/
-│       ├── banglore_home_prices_model.pickle
-│       └── columns.json
 ├── requirements.txt
 ├── render.yaml
 ├── venv/                    # Python virtual environment
