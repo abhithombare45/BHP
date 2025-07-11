@@ -53,6 +53,20 @@ BHP/
 │   └── app.css
 ├── venv/                    # Python virtual environment
 
+
+BHP/
+├── client/
+│   ├── app.html         ✅ frontend file
+│   ├── app.js
+│   └── app.css
+├── server/
+│   ├── server.py        ✅ Flask app with `app = Flask(__name__, static_folder=...)`
+│   ├── util.py
+│   └── artifacts/
+│       ├── banglore_home_prices_model.pickle
+│       └── columns.json
+├── requirements.txt
+├── render.yaml
 ---
 
 ## 📊 ML Model
