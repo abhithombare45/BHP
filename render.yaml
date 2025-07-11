@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bhp-app
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn server.server:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
