@@ -1,6 +1,8 @@
 import json
 import pickle
 import numpy as np
+import os
+
 # import sklearn as sl
 # scikit-learn
 
@@ -36,10 +38,9 @@ def load_saved_artifacts():
     global __data_columns
     global __locations
 
-    with open(
-        "/Users/abhijeetthombare/ab_lib/Projects/BangloreHousePrices/server/artifacts/columns.json",
-        "r",
-    ) as f:
+#    with open("/Users/abhijeetthombare/ab_lib/Projects/BangloreHousePrices/server/artifacts/columns.json","r",) as f:
+    base_dir = os.path.dirname(__file__)
+    with open(os.path.join(base_dir, "artifacts", "columns.json"), "r") as f:
         __data_columns = json.load(f)["data_columns"]
         __locations = __data_columns[3:]
 
