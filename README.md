@@ -43,12 +43,12 @@ Users enter the details via a clean UI, and predictions are returned instantly v
 
 ## ⚙️ Project Structure
 BHP/
-├── server/                   # Backend
-│   ├── server.py            # Flask app
+├── server/                  # Backend
+│   ├── server.py            # Flask app 
 │   ├── util.py              # Prediction logic
 │   └── artifacts/           # Trained model + columns.json
 ├── client/                  # Frontend
-│   ├── app.html
+│   ├── app.html             # Front-End main file
 │   ├── app.js
 │   └── app.css
 ├── venv/                    # Python virtual environment
